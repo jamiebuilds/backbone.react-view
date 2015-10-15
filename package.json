@@ -1,0 +1,31 @@
+{
+  "name": "backbone.react-view",
+  "version": "0.0.0",
+  "description": "Backbone.ReactView",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thejameskyle/backbone.react-view.git"
+  },
+  "keywords": [
+    "Backbone",
+    "Marionette",
+    "React",
+    "View",
+    "Component"
+  ],
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thejameskyle/backbone.react-view/issues"
+  },
+  "homepage": "https://github.com/thejameskyle/backbone.react-view#readme",
+  "dependencies": {
+    "backbone": "^1.2.3",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  }
+}
