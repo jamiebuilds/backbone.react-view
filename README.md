@@ -30,7 +30,7 @@ export default LayoutView.extend({
   regions: { myRegion: '.my-region' },
 
   onRender() {
-    this.myRegion.show(new ReactPortal({
+    this.myRegion.show(new ReactView({
       component: MyReactComponent
     }));
   }
