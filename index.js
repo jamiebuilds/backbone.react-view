@@ -18,11 +18,15 @@ module.exports = Backbone.View.extend({
   },
 
   render: function() {
-    ReactDOM.render(React.createElement(this.component), this.el);
+    ReactDOM.render(this.wrapChildren(React.createElement(this.component)), this.el);
     return this;
   },
 
   remove: function() {
     ReactDOM.unmountComponentAtNode(this.el);
+  },
+
+  wrapChildren: function(children) {
+    return children;
   }
 });

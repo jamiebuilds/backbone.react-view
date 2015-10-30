@@ -36,3 +36,23 @@ export default LayoutView.extend({
   }
 });
 ```
+
+To wrap with a Redux `<Provider>`:
+
+```js
+import ReactView from 'backbone.react-view';
+import {Provider} from 'react-redux';
+import store from './my-store';
+
+export default ReactView.extend({
+  wrapChildren(children) {
+    return (
+      <Provider store={store}>
+        {children}
+      </Provider>
+    );
+  }
+});
+```
+
+Then just use that copy of `ReactView`.
