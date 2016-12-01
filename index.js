@@ -24,6 +24,7 @@ module.exports = Backbone.View.extend({
 
   remove: function() {
     ReactDOM.unmountComponentAtNode(this.el);
+    return Backbone.View.remove.apply(this, arguments);
   },
 
   wrapChildren: function(children) {
