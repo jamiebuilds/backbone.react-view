@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/thejameskyle/backbone.react-view#readme",
   "dependencies": {
-    "backbone": "<=1.2.3",
+    "backbone": "<1.4.0",
     "react": "^0.14.0 || 15.0.0-0",
     "react-dom": "^0.14.0 || 15.0.0-0"
   }
