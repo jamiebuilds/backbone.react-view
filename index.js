@@ -9,6 +9,7 @@ var counter = 0;
 module.exports = Backbone.View.extend({
   initialize: function(options) {
     this.component = options.component;
+    this.props = options.props || {};
   },
 
   attributes: function() {
@@ -18,7 +19,7 @@ module.exports = Backbone.View.extend({
   },
 
   render: function() {
-    ReactDOM.render(this.wrapChildren(React.createElement(this.component)), this.el);
+    ReactDOM.render(this.wrapChildren(React.createElement(this.component, this.props)), this.el);
     return this;
   },
 
